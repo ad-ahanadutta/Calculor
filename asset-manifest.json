@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Calculor/static/css/main.514f4a9f.chunk.css",
+    "main.css": "/Calculor/static/css/main.04390e8d.chunk.css",
     "main.js": "/Calculor/static/js/main.ca682192.chunk.js",
     "main.js.map": "/Calculor/static/js/main.ca682192.chunk.js.map",
     "runtime-main.js": "/Calculor/static/js/runtime-main.c7f55f3c.js",
@@ -8,15 +8,15 @@
     "static/js/2.be65834e.chunk.js": "/Calculor/static/js/2.be65834e.chunk.js",
     "static/js/2.be65834e.chunk.js.map": "/Calculor/static/js/2.be65834e.chunk.js.map",
     "index.html": "/Calculor/index.html",
-    "precache-manifest.9e558ff2b9a40a607d10a579a2cc9311.js": "/Calculor/precache-manifest.9e558ff2b9a40a607d10a579a2cc9311.js",
+    "precache-manifest.5e9ee5d37085a6db03f7566a1402fb90.js": "/Calculor/precache-manifest.5e9ee5d37085a6db03f7566a1402fb90.js",
     "service-worker.js": "/Calculor/service-worker.js",
-    "static/css/main.514f4a9f.chunk.css.map": "/Calculor/static/css/main.514f4a9f.chunk.css.map",
+    "static/css/main.04390e8d.chunk.css.map": "/Calculor/static/css/main.04390e8d.chunk.css.map",
     "static/js/2.be65834e.chunk.js.LICENSE.txt": "/Calculor/static/js/2.be65834e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c7f55f3c.js",
     "static/js/2.be65834e.chunk.js",
-    "static/css/main.514f4a9f.chunk.css",
+    "static/css/main.04390e8d.chunk.css",
     "static/js/main.ca682192.chunk.js"
   ]
 }
