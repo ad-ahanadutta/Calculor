@@ -23,9 +23,14 @@ const Grid = () => {
     setInput(res);
   };
 
+  const remove = () => {
+    let del = input.slice(0, -1);
+    setInput(del);
+  };
+
   return (
     <div className="grid">
-      <input type="text" value={input} />
+      <input type="text" value={input} disabled="disabled" />
       <div className="calculator-buttons">
         <button onClick={() => setInput("")} className="calc-button is-clear">
           C
@@ -75,6 +80,9 @@ const Grid = () => {
 
         <button onClick={handleClick} value="0" className="calc-button is-zero">
           0
+        </button>
+        <button onClick={remove} className="calc-button">
+          <i class="fas fa-backspace"></i>
         </button>
         <button onClick={calculate} className="calc-button is-equals">
           =
