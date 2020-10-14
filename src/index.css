@@ -36,7 +36,7 @@ code {
 .calc-button {
   background: rgba(22, 22, 22, 0.767); /* light background with opacity 50% */
   border: 2px solid #111; /* black border */
-  padding: 20px;
+  padding: 18px;
   color: #eee; /* white text */
   border-radius: 5px; /* rounded corners */
   font-size: 24px; /* larger fonts */
@@ -84,4 +84,7 @@ code {
 .is-equals {
   background: #35d84b;
   grid-column: span 2;
+}
+i {
+  font-size: 19px;
 }
