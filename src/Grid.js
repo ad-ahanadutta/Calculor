@@ -6,8 +6,6 @@ const Grid = () => {
 
   const handleClick = (e) => {
     setInput(input.concat(e.target.value));
-    console.log(e.target.value.type);
-    console.log(input);
   };
 
   const calculate = () => {
@@ -19,8 +17,18 @@ const Grid = () => {
     let cal = input.replace(/÷|×|−/gi, function (matched) {
       return rep[matched];
     });
-    let res = eval(cal);
-    setInput(res);
+    let exp = `return ${cal};`;
+    let res = "";
+    try {
+      res = new Function(exp)();
+    } catch {
+      res = false;
+    }
+    if (res) {
+      setInput(res.toString());
+    } else {
+      setInput("Syntax Error");
+    }
   };
 
   const remove = () => {
@@ -35,10 +43,12 @@ const Grid = () => {
         <button onClick={() => setInput("")} className="calc-button is-clear">
           C
         </button>
+        <button onClick={remove} className="calc-button">
+          <i class="fas fa-backspace"></i>
+        </button>
         <button onClick={handleClick} value="÷" className="calc-button">
           ÷
         </button>
-
         <button onClick={handleClick} value="7" className="calc-button">
           7
         </button>
@@ -51,7 +61,6 @@ const Grid = () => {
         <button onClick={handleClick} value="×" className="calc-button">
           ×
         </button>
-
         <button onClick={handleClick} value="4" className="calc-button">
           4
         </button>
@@ -64,7 +73,6 @@ const Grid = () => {
         <button onClick={handleClick} value="−" className="calc-button">
           −
         </button>
-
         <button onClick={handleClick} value="1" className="calc-button">
           1
         </button>
@@ -77,12 +85,14 @@ const Grid = () => {
         <button onClick={handleClick} value="&#43;" className="calc-button">
           +
         </button>
-
         <button onClick={handleClick} value="0" className="calc-button is-zero">
           0
         </button>
-        <button onClick={remove} className="calc-button">
-          <i class="fas fa-backspace"></i>
+        <button onClick={handleClick} value="." className="calc-button">
+          .
+        </button>
+        <button onClick={handleClick} value="%" className="calc-button">
+          &#65285;
         </button>
         <button onClick={calculate} className="calc-button is-equals">
           =

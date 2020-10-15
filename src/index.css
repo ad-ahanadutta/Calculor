@@ -71,19 +71,12 @@ code {
 }
 /* span across 3 columns */
 .is-clear {
-  grid-column: span 3;
-}
-/* .is-zero {
   grid-column: span 2;
-} */
-
-/* go blue */
-.is-clear {
   background: #3275e9;
 }
+
 .is-equals {
   background: #35d84b;
-  grid-column: span 2;
 }
 i {
   font-size: 19px;
