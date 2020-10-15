@@ -25,7 +25,6 @@ code {
   box-sizing: border-box;
 }
 
-/* limit the width and center */
 .grid {
   background-color: rgb(201, 230, 231);
   max-width: 400px;
@@ -34,16 +33,15 @@ code {
   border-radius: 5px;
 }
 .calc-button {
-  background: rgba(22, 22, 22, 0.767); /* light background with opacity 50% */
-  border: 2px solid #111; /* black border */
+  background: rgba(22, 22, 22, 0.767);
+  border: 2px solid #111;
   padding: 18px;
-  color: #eee; /* white text */
-  border-radius: 5px; /* rounded corners */
-  font-size: 24px; /* larger fonts */
-  cursor: pointer; /* make it look clickable */
+  color: #eee;
+  border-radius: 5px;
+  font-size: 24px;
+  cursor: pointer;
 }
 .grid input {
-  /* reset basic form styles */
   background: none;
   border: none;
   box-shadow: none;
@@ -58,18 +56,14 @@ code {
   border-radius: 0;
 }
 .calculator-buttons {
-  /* small spacing within our container */
   padding: 20px;
   padding-top: 10px;
 
-  /* the grid stuff! */
   display: grid;
 
-  /* create 4 columns */
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 15px;
 }
-/* span across 3 columns */
 .is-clear {
   grid-column: span 2;
   background: #3275e9;
